@@ -6,6 +6,7 @@
 int main(int argc, char *argv[]) {
     if (argc != 3) {
       printf("Usage: ./hello.exe <name> <count>\n");
+      return 1;
     }
     char *name = argv[1];
     long count = strtol(argv[2], NULL, 10);
