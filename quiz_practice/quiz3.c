@@ -8,4 +8,5 @@ int game_over(int answer, int first, int second, time_t start, int seconds) {
     return 1;
   }
   time_t elapsed = time(NULL) - start;
-  
+  return elapsed >= seconds;
+}
